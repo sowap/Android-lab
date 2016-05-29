@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Android-lab</string>
+    <string name="gatunek">gatunek</string>
+    <string name="kolor">kolor</string>
+    <string name="wielkosc">wielkosc</string>
+    <string name="opis">opis</string>
+    <string name="dodaj">Dodaj</string>
 </resources>

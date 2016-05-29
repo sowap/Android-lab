@@ -9,20 +9,47 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.aiko.android_lab.DodajWpis">
 
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gatunek"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="37dp"
-        android:inputType="text" />
+        android:id="@+id/kolor"
+        android:inputType="text"
+        android:hint="@string/kolor"
+        android:layout_below="@+id/gatunek"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wielkosc"
+        android:hint="@string/wielkosc"
+        android:inputType="number"
+        android:layout_below="@+id/kolor"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/opis"
+        android:inputType="text"
+        android:hint="@string/opis"
+        android:layout_below="@+id/wielkosc"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="@string/dodaj"
         android:id="@+id/button"
-        android:layout_below="@+id/editText"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp" />
+        android:clickable="false"
+        android:onClick="wyslij" />
 </RelativeLayout>
